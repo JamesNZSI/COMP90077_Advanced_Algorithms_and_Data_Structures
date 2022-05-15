@@ -18,6 +18,8 @@ def print_hi(name):
 
 
 ID_NEXT = 1
+ement_set = {}
+
 def gen_element():
     global ID_NEXT
     id = ID_NEXT
@@ -31,6 +33,13 @@ def gen_insertion():
     return (1, gen_element())
 
 def gen_deletion():
+    # range [0, 10,000,000]
+    key = random.randint(0, 10000000)
+    return (2, key)
 
+def gen_search():
+    # range [0, 10,000,000]
+    key = random.randint(0, 10000000)
+    return (3, key)
 
 print(gen_insertion())

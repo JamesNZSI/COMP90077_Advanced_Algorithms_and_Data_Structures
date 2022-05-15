@@ -2,10 +2,20 @@ import random
 
 class Treap():
     def __init__(self):
-        i = 1
+        self.root = None
+
+    def split(self, x):
+        if self.root is None:
+            return None, None
+        elif self.root.key is None:
+            return None, None
+        else:
+            
+
 
     def insert(self, x):
-        i=2
+        node = TreapNode(x[0], x[1])
+        left, right = split(root, x)
 
     def delete(self, key):
         i=3
