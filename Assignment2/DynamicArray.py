@@ -1,5 +1,7 @@
-import random
-
+"""
+Student Id: 1064689
+Student Name: Pingzhou Li
+"""
 
 class ArrayObject:
     def __init__(self):

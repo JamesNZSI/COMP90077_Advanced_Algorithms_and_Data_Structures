@@ -1,5 +1,9 @@
-import random
+from random import random
 
+"""
+Student Id: 1064689
+Student Name: Pingzhou Li
+"""
 # reference https://github.com/TheAlgorithms/Python/blob/master/data_structures/binary_tree/treap.py
 # a very interesting implementation without rotation
 
@@ -80,8 +84,8 @@ def delete(root: TreapNode, key):
     Split all nodes with keys greater than key into right.
     Merge left and right
     """
-    left, right = split(root, (key[0] - 1, key[1]))
-    _, right = split(right, key)
+    left, right = split(root, (0, key))
+    _, right = split(right, (10000000, key))
     return merge(left, right)
 
 

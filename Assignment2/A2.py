@@ -12,6 +12,11 @@ from DynamicArray import delete as da_delete
 import time
 import matplotlib.pyplot as plt
 
+"""
+Student Id: 1064689
+Student Name: Pingzhou Li
+"""
+
 random.seed(1)
 M = 1000000
 # {exp1:{DA:[running_time], Treap:[running_time], x:[x]},..}
@@ -365,17 +370,18 @@ def draw_chart(data, exp_no):
     plt.legend()
     # save as file
     fig.savefig("F://" + exp_no + '.jpg')
+    # no need to show if saved a file
     # plt.show()
 
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    # exp1()
-    # draw_chart(RESULT["exp1"], "exp1")
-    # print(RESULT)
-    exp2()
-    draw_chart(RESULT["exp2"], "exp2")
+    exp1()
+    draw_chart(RESULT["exp1"], "exp1")
     print(RESULT)
+    # exp2()
+    # draw_chart(RESULT["exp2"], "exp2")
+    # print(RESULT)
     # exp3()
     # draw_chart(RESULT["exp3"], "exp3")
     # print(RESULT)
